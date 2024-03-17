@@ -1,6 +1,8 @@
 import telebot
-
-TOKEN = '7164557265:AAELlzH_SgYzJc4-MoSRyvS_nRlYJq6dOg8'
+import os
+from dotenv import load_dotenv
+load_dotenv()
+TOKEN = os.getenv('TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 def square(num):
@@ -8,7 +10,7 @@ def square(num):
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.reply_to(message, f"Hello, {message.from_user.first_name.username.last_name}.How are you doing?")
+    bot.reply_to(message, f"Hello, {message.from_user.first_name} {message.from_user.last_name}.How are you doing?")
 
 @bot.message_handler(func=lambda msg: True)
 def send_all(message):
