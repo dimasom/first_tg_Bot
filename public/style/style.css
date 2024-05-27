@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(14, 163, 222);
+}
+
+
+.container {
+    max-width: 420px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 15px;
+}
+
+
+.container__title {
+    color: rgba(76, 70, 70, 10);
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+.registration-form {
+    background-color: white;
+    border: 1px solid #0e0c07;
+    border-radius: 1px;
+    text-align: center;
+    
+}
+
+label {
+    color: white;
+}
+
+
+
+.btn {
+    cursor: pointer;
+}
